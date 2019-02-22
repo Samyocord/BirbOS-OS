@@ -8,10 +8,11 @@ namespace BirbOS
     public class Kernel : Sys.Kernel
     {
 
-        private static string user = "";
+        private static string user = "birb";
 
         protected override void BeforeRun()
         {
+            clear();
             Console.WriteLine("BBBB      B     BBBBBB      BBBB       BBBB      BBBBB");
             Console.WriteLine("B   B           B     B     B   B     B    B    B");
             Console.WriteLine("B    B    B     B     B     B    B    B    B   B");
@@ -19,6 +20,28 @@ namespace BirbOS
             Console.WriteLine("B    B    B     BB          B    B    B    B         B");
             Console.WriteLine("B   B     B     B  B        B   B     B    B        B");
             Console.WriteLine("BBBB      B     B   BB      BBBB       BBBB    BBBBB");
+        }
+
+        //Because I'm too stupid to search for a method to clear the console with Cosmos.
+        public static void clear()
+        {
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("");
         }
 
         protected override void Run()
