@@ -13,7 +13,7 @@ namespace BirbOS
         protected override void BeforeRun()
         {
             Console.WriteLine("Welcome to BirbOS C#! Please enter an username : ");
-            var user = Console.Readline();
+            var user = Console.ReadLine();
             clear();
             Console.WriteLine("BBBB      B     BBBBBB      BBBB       BBBB      BBBBB");
             Console.WriteLine("B   B           B     B     B   B     B    B    B");
@@ -120,11 +120,11 @@ namespace BirbOS
                 Console.WriteLine("Initial release");
             } else if (input == "theme") 
             {
-                Console.WriteLine("Themes : default, light, hacker")
-                Console.WriteLine("Theme : ")
-                var theme = Console.ReadLine()
-                if (theme == "default) {
-                    Console.ResetColor()
+                Console.WriteLine("Themes : default, light, hacker");
+                Console.WriteLine("Theme : ");
+                var theme = Console.ReadLine();
+                if (theme == "default") {
+                    Console.ResetColor();
                 } else 
                 if (theme == "light") {
                     Console.BackgroundColor = ConsoleColor.White;
@@ -134,7 +134,7 @@ namespace BirbOS
                     Console.BackgroundColor = ConsoleColor.Black;
                     Console.ForegroundColor = ConsoleColor.Green;
                 } else {
-                    Console.WriteLine("Unknown theme")
+                    Console.WriteLine("Unknown theme");
                 }
             } else
             {
