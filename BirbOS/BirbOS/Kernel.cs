@@ -8,10 +8,12 @@ namespace BirbOS
     public class Kernel : Sys.Kernel
     {
 
-        private static string user = "birb";
+        private static string user;
 
         protected override void BeforeRun()
         {
+            Console.WriteLine("Welcome to BirbOS C#! Please enter an username : ");
+            var user = Console.ReadLine();
             clear();
             Console.WriteLine("BBBB      B     BBBBBB      BBBB       BBBB      BBBBB");
             Console.WriteLine("B   B           B     B     B   B     B    B    B");
@@ -20,6 +22,8 @@ namespace BirbOS
             Console.WriteLine("B    B    B     BB          B    B    B    B         B");
             Console.WriteLine("B   B     B     B  B        B   B     B    B        B");
             Console.WriteLine("BBBB      B     B   BB      BBBB       BBBB    BBBBB");
+            Console.WriteLine("");
+            Console.WriteLine("Hello, " + user + "!");
         }
 
         //Because I'm too stupid to search for a method to clear the console with Cosmos.
@@ -114,6 +118,24 @@ namespace BirbOS
             {
                 Console.WriteLine("Build 1.0");
                 Console.WriteLine("Initial release");
+            } else if (input == "theme") 
+            {
+                Console.WriteLine("Themes : default, light, hacker");
+                Console.WriteLine("Theme : ");
+                var theme = Console.ReadLine();
+                if (theme == "default") {
+                    Console.ResetColor();
+                } else 
+                if (theme == "light") {
+                    Console.BackgroundColor = ConsoleColor.White;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                } else
+                if (theme == "hacker") {
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                } else {
+                    Console.WriteLine("Unknown theme");
+                }
             } else
             {
                 Console.WriteLine("This command has not been implemented yet.");
