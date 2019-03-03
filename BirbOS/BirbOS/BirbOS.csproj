@@ -8,7 +8,7 @@
         <BinFormat>ELF</BinFormat>
         <StackCorruptionDetectionEnabled>True</StackCorruptionDetectionEnabled>
         <StackCorruptionDetectionLevel>MethodFooters</StackCorruptionDetectionLevel>
-        <Deployment>ISO</Deployment>
+        <Deployment>USB</Deployment>
         <DebugEnabled>False</DebugEnabled>
         <DebugMode>Source</DebugMode>
         <IgnoreDebugStubAttribute>False</IgnoreDebugStubAttribute>
@@ -41,6 +41,48 @@
         <HyperV_VMwareEdition>Workstation</HyperV_VMwareEdition>
         <HyperV_EnableGDB>False</HyperV_EnableGDB>
         <HyperV_StartCosmosGDB>False</HyperV_StartCosmosGDB>
+        <USB_StackCorruptionDetectionEnabled>True</USB_StackCorruptionDetectionEnabled>
+        <USB_StackCorruptionDetectionLevel>MethodFooters</USB_StackCorruptionDetectionLevel>
+        <USB_Description>Makes a USB device such as a flash drive or external hard disk bootable.</USB_Description>
+        <USB_Deployment>USB</USB_Deployment>
+        <USB_Launch>None</USB_Launch>
+        <USB_DebugEnabled>False</USB_DebugEnabled>
+        <USB_DebugMode>Source</USB_DebugMode>
+        <USB_IgnoreDebugStubAttribute>False</USB_IgnoreDebugStubAttribute>
+        <USB_CosmosDebugPort>Serial: COM1</USB_CosmosDebugPort>
+        <USB_VisualStudioDebugPort>Pipe: Cosmos\Serial</USB_VisualStudioDebugPort>
+        <USB_PxeInterface>192.168.0.8</USB_PxeInterface>
+        <USB_VMwareEdition>Workstation</USB_VMwareEdition>
+        <USB_EnableGDB>False</USB_EnableGDB>
+        <USB_StartCosmosGDB>False</USB_StartCosmosGDB>
+        <ISO_StackCorruptionDetectionEnabled>True</ISO_StackCorruptionDetectionEnabled>
+        <ISO_StackCorruptionDetectionLevel>MethodFooters</ISO_StackCorruptionDetectionLevel>
+        <ISO_Description>Creates a bootable ISO image which can be burned to a DVD. After running the selected project, an explorer window will open containing the ISO file. The ISO file can then be burned to a CD or DVD and used to boot a physical or virtual system.</ISO_Description>
+        <ISO_Deployment>ISO</ISO_Deployment>
+        <ISO_Launch>None</ISO_Launch>
+        <ISO_DebugEnabled>False</ISO_DebugEnabled>
+        <ISO_DebugMode>Source</ISO_DebugMode>
+        <ISO_IgnoreDebugStubAttribute>False</ISO_IgnoreDebugStubAttribute>
+        <ISO_CosmosDebugPort>Serial: COM1</ISO_CosmosDebugPort>
+        <ISO_VisualStudioDebugPort>Pipe: Cosmos\Serial</ISO_VisualStudioDebugPort>
+        <ISO_PxeInterface>192.168.0.8</ISO_PxeInterface>
+        <ISO_VMwareEdition>Workstation</ISO_VMwareEdition>
+        <ISO_EnableGDB>False</ISO_EnableGDB>
+        <ISO_StartCosmosGDB>False</ISO_StartCosmosGDB>
+        <PXE_StackCorruptionDetectionEnabled>True</PXE_StackCorruptionDetectionEnabled>
+        <PXE_StackCorruptionDetectionLevel>MethodFooters</PXE_StackCorruptionDetectionLevel>
+        <PXE_Description>Creates a PXE setup and hosts a DCHP and TFTP server to deploy directly to physical hardware. Allows debugging with a serial cable.</PXE_Description>
+        <PXE_Deployment>PXE</PXE_Deployment>
+        <PXE_Launch>None</PXE_Launch>
+        <PXE_DebugEnabled>False</PXE_DebugEnabled>
+        <PXE_DebugMode>Source</PXE_DebugMode>
+        <PXE_IgnoreDebugStubAttribute>False</PXE_IgnoreDebugStubAttribute>
+        <PXE_CosmosDebugPort>Serial: COM1</PXE_CosmosDebugPort>
+        <PXE_VisualStudioDebugPort>Pipe: Cosmos\Serial</PXE_VisualStudioDebugPort>
+        <PXE_PxeInterface>192.168.0.8</PXE_PxeInterface>
+        <PXE_VMwareEdition>Workstation</PXE_VMwareEdition>
+        <PXE_EnableGDB>False</PXE_EnableGDB>
+        <PXE_StartCosmosGDB>False</PXE_StartCosmosGDB>
     </PropertyGroup>
 
     <PropertyGroup>
@@ -48,9 +90,9 @@
         <StartCosmosGDB>False</StartCosmosGDB>
         <VisualStudioDebugPort>Pipe: Cosmos\Serial</VisualStudioDebugPort>
         <CosmosDebugPort>Serial: COM1</CosmosDebugPort>
-        <Launch>VMware</Launch>
-        <Profile>VMware</Profile>
-        <Description>Use VMware Player or Workstation to deploy and debug.</Description>
+        <Launch>None</Launch>
+        <Profile>USB</Profile>
+        <Description>Makes a USB device such as a flash drive or external hard disk bootable.</Description>
         <PxeInterface>192.168.0.8</PxeInterface>
     </PropertyGroup>
 
