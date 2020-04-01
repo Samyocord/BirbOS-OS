@@ -105,23 +105,9 @@ namespace BirbOS
         //Because I'm too stupid to search for a method to clear the console with Cosmos.
         public static void clear()
         {
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
-            Console.WriteLine("");
+            for (int i=0;i<17;i++){ 
+                Console.WriteLine("");
+            }
         }
 
         protected override void Run()
